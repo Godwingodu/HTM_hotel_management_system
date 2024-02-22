@@ -60,7 +60,6 @@ class CustomUserManager(BaseUserManager):
 class CustomUser(AbstractUser):
     hotel_name = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
-    hotel_id   = models.CharField(max_length=20, unique=True)
     place = models.CharField(max_length = 25)
     district = models.CharField(max_length = 150)
     state = models.CharField(max_length = 40)
